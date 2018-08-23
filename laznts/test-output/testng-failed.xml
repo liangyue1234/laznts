@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Mytest]">
+  <listeners>
+    <listener class-name="com.laznts.util.ExtentTestNGIReporterListener"/>
+  </listeners>
+  <test name="logincase(failed)">
+    <classes>
+      <class name="com.laznts.testcase.Login">
+        <methods>
+          <include name="testLogin"/>
+          <include name="getLoginHome"/>
+        </methods>
+      </class> <!-- com.laznts.testcase.Login -->
+    </classes>
+  </test> <!-- logincase(failed) -->
+</suite> <!-- Failed suite [Mytest] -->

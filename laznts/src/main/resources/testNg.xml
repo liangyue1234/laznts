@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="Mytest">
+    <test name="logincase">
+        <classes>
+       <class name="com.laznts.testcase.Login"/>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="com.laznts.util.ExtentTestNGIReporterListener"/>
+    </listeners>
+
+</suite>
