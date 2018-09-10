@@ -17,7 +17,7 @@ public class LoginPage extends BasePage {
      * 获取用户名输入框
      */
     public WebElement getUserElement(){
-        return      element(getByLocator.getLocator("username"));
+        return    element(getByLocator.getLocator("username"));
 
     }
     /**

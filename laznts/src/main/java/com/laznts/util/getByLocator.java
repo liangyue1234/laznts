@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
  */
 public  class  getByLocator {
     public static By getLocator(String key){
-        ProUtil pro = new ProUtil("D:\\laznts\\laznts\\laznts\\src\\main\\resources\\element.properties");
+        ProUtil pro = new ProUtil("D:\\lzznts\\laznts\\laznts\\laznts\\src\\main\\resources\\element.properties");
         String locator = pro.getPro(key);
         String locatorType = locator.split(">")[0];
         String locatorValue = locator.split(">")[1];

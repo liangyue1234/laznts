@@ -33,4 +33,17 @@ public class DriverBase {
         WebElement element=driver.findElement(by);
         return element;
     }
+    /**
+     * 窗口最大化
+     */
+    public void sizeWindow(){
+        driver.manage().window().maximize();
+    }
+
+    /**
+     * 关闭窗口方法
+     */
+    public void close(){
+        driver.quit();
+    }
 }

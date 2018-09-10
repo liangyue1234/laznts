@@ -20,6 +20,7 @@ public class Login extends CaseBase{
       @BeforeMethod
        public void  getLoginHome() throws InterruptedException {
         driver.get("http://124.205.50.166:8082/caa_v3.0/jsp/index.html");
+        driver.sizeWindow();
         Thread.sleep(3000);
        }
        @Test

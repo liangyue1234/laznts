@@ -10,7 +10,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class SelectDriver {
        public WebDriver driverName(String browser){
          if(browser.equalsIgnoreCase("chrome")){
-             System.setProperty("webdriver.chrome.driver","C:\\Users\\Administrator\\Desktop\\driver\\chromedriver.exe");
+             System.setProperty("webdriver.chrome.driver","C:\\Users\\liang\\Desktop\\repository\\chromedriver.exe");
              return new ChromeDriver();
          }else {
              System.setProperty("webdriver.firefox.driver","C:\\Users\\Administrator\\Desktop\\driver\\geckodriver.exe");
