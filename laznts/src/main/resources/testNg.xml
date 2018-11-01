@@ -2,11 +2,14 @@
 <suite name="Mytest">
     <test name="logincase">
         <classes>
-       <class name="com.laznts.testcase.Login"/>
-        </classes>
-    </test>
-    <listeners>
-        <listener class-name="com.laznts.util.ExtentTestNGIReporterListener"/>
-    </listeners>
+<class name="com.laznts.testcase.Login"/>
+<class name="com.laznts.testcase.Register"/>
+<class name="com.laznts.testcase.AllSearch"/>
+</classes>
+        </test>
 
-</suite>
+<listeners>
+<listener class-name="com.laznts.util.ExtentTestNGIReporterListener"/>
+</listeners>
+
+        </suite>

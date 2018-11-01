@@ -6,12 +6,20 @@
   </listeners>
   <test name="logincase(failed)">
     <classes>
-      <class name="com.laznts.testcase.Login">
+      <class name="com.laznts.testcase.AllSearch">
         <methods>
-          <include name="testLogin"/>
-          <include name="getLoginHome"/>
+          <include name="closeAllSearch"/>
+          <include name="getUrl"/>
+          <include name="allSearchCase"/>
         </methods>
-      </class> <!-- com.laznts.testcase.Login -->
+      </class> <!-- com.laznts.testcase.AllSearch -->
+      <class name="com.laznts.testcase.Upload.Register">
+        <methods>
+          <include name="getLoginHome"/>
+          <include name="testRegister"/>
+          <include name="closeRegister"/>
+        </methods>
+      </class> <com.laznts.testcase.Upload.Registerster -->
     </classes>
   </test> <!-- logincase(failed) -->
 </suite> <!-- Failed suite [Mytest] -->

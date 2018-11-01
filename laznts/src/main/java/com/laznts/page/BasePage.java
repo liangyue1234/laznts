@@ -11,7 +11,8 @@ import org.openqa.selenium.WebElement;
 public class BasePage {
    public DriverBase driver;
    public BasePage(DriverBase driver){
-  this.driver=driver;
+
+       this.driver=driver;
    }
     /**
      * 定位Element

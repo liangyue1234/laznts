@@ -1,2 +1,64 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Mytest</th></tr><tr><td><a href="#t0">logincase</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">14,044</td><td></td><td></td></tr></table><table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Mytest</th></tr></tbody><tbody id="t0"><tr><th colspan="4">logincase &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.laznts.testcase.Login</td><td><a href="#m0">testLogin</a></td><td rowspan="1">1535031933876</td><td rowspan="1">454</td></tr></tbody></table><h2>logincase</h2><h3 id="m0">com.laznts.testcase.Login#testLogin</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Mytest</th></tr><tr><td><a href="#t0">logincase</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">2</td><td class="num">85,248</td><td></td><td></td></tr></table><table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Mytest</th></tr></tbody><tbody id="t0"><tr><th colspan="4">logincase &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.laznts.testcase.AllSearch</td><td><a href="#m0">allSearchCase</a></td><td rowspan="1">1540776981989</td><td rowspan="1">43</td></tr><tr class="failedodd"><td rowspan="1">com.laznts.testcase.Upload.Register</td><td><a href="#m1">testRegister</a></td><td rowspan="1">1540776953480</td><td rowspan="1">1751</td></tr><tr><th colspan="4">logincase &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.laznts.testcase.Login</td><td><a href="#m2">testLogin</a></td><td rowspan="1">1540776924702</td><td rowspan="1">1321</td></tr></tbody></table><h2>logincase</h2><h3 id="m0">com.laznts.testcase.AllSearch#allSearchCase</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;class name&quot;,&quot;selector&quot;:&quot;search_ipt&quot;}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;LAPTOP-EIMAG1O8&apos;, ip: &apos;192.170.21.70&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\liang\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 712432d1cb5649ed7b79d7fe0d7912cb
+*** Element info: {Using=class name, value=search_ipt}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:457)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at com.laznts.base.DriverBase.findelement(DriverBase.java:36)
+	at com.laznts.page.BasePage.element(BasePage.java:22)
+	at com.laznts.page.AllSearchPage.getSearch(AllSearchPage.java:21)
+	at com.laznts.handle.AllSearchHandle.arrsertSearch(AllSearchHandle.java:35)
+	at com.laznts.business.AllSearchPro.search(AllSearchPro.java:18)
+	at com.laznts.testcase.AllSearch.allSearchCase(AllSearch.java:26)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com.laznts.testcase.Register#testRegister</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException:
+    unknown error: Element &lt;input type=&quot;button&quot; id=&quot;submitBtn&quot; class=&quot;register_btn&quot;
+    value=&quot;立 即 注 册&quot;&gt; is not clickable at point (674, 589). Other element would receive the click: &lt;li&gt;...&lt;/li&gt;
+    (Session info: chrome=69.0.3497.100)
+    (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134
+    x86_64) (WARNING: The server did not provide any stacktrace information)
+    Command duration or timeout: 0 milliseconds
+    Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+    System info: host: &apos;LAPTOP-EIMAG1O8&apos;, ip: &apos;192.170.21.70&apos;, os.name: &apos;Windows 10&apos;,
+    os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+    Driver info: org.openqa.selenium.chrome.ChromeDriver
+    Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false,
+    browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca...,
+    userDataDir: C:\Users\liang\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts:
+    true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false,
+    nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP,
+    rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ,
+    unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+    Session ID: 9e14a60caaf2d5760e95ea325faf888c
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+    at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+    at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+    at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+    at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+    at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+    at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+    at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+    at com.laznts.page.BasePage.click(BasePage.java:30)
+    at com.laznts.handle.RegisterPageHandle.clickButn(RegisterPageHandle.java:51)
+    at com.laznts.business.RegisterPro.register(RegisterPro.java:22)
+    at com.laznts.testcase.Upload.Register.testRegister(Register.java:27)
+    ... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">com.laznts.testcase.Login#testLogin</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

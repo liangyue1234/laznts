@@ -3,6 +3,8 @@ package com.laznts.handle;
 import com.laznts.base.DriverBase;
 import com.laznts.page.LoginPage;
 
+import java.io.IOException;
+
 /**
  * Created by Administrator on 2018/8/23.
  */
@@ -41,6 +43,16 @@ public class LoginPageHandle {
      * 判断是否是登录页面
      */
     public Boolean assertLoginPage(){
-   return      lp.assertElement(lp.getUserElement());
+   return  lp.assertElement(lp.getUserElement());
+    }
+    /**
+     * 登录后截图
+     */
+    public void screen(){
+        try {
+            driver.screenShot();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

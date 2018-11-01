@@ -1,20 +1,28 @@
 package com.laznts.base;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import com.aventstack.extentreports.utils.FileUtil;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.*;
 import org.testng.annotations.Test;
+
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 /**
  * Created by Administrator on 2018/8/23.
  */
 public class DriverBase {
     public WebDriver driver;
-    @Test
     public DriverBase(String browser){
         SelectDriver selectDriver=new SelectDriver();
        this.driver= selectDriver.driverName(browser);
     }
+
+    /**
+     * 关闭方法
+     */
     public void stop(){
         System.out.println("stop webdrivers");
         driver.close();
@@ -45,5 +53,27 @@ public class DriverBase {
      */
     public void close(){
         driver.quit();
+    }
+    /**
+     * 后退
+     */
+    public void back(){
+        driver.navigate().back();
+    }
+    /**
+     * 截图
+     */
+    public void screenShot() throws IOException {
+        SimpleDateFormat dateFormat=new SimpleDateFormat("yyyyMMddHHmmss");
+        String time=dateFormat.format(Calendar.getInstance().getTime());
+        File srcFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(srcFile,new File("screenshot",time+".png"));
+    }
+    /**
+     * 获取文本信息
+     */
+    public String  getText(By by){
+
+        return driver.findElement(by).getText();
     }
 }
