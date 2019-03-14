@@ -46,13 +46,9 @@ public class LoginPageHandle {
    return  lp.assertElement(lp.getUserElement());
     }
     /**
-     * 登录后截图
+     * 判断登录后用户名是否正确
      */
-    public void screen(){
-        try {
-            driver.screenShot();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+//    public String assertUserName(){
+//        return lp.getUserName();
+//    }
 }

@@ -1,0 +1,26 @@
+GET https://www.baidu.com/http
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-26T050026.200.html
+
+###
+
+GET /http
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080/resources
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080/resources
+Accept: */*
+Cache-Control: no-cache
+
+###
+

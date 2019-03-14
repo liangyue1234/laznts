@@ -18,7 +18,7 @@ public class AllSearch extends  CaseBase {
      }
      @BeforeMethod
      public void getUrl(){
-         driverBase.get("http://124.205.50.166:8082/caa_v3.0/jsp/index.html");
+         driverBase.get("http://192.168.10.111:8084/caa_v3.0/jsp/index.html");
          driverBase.sizeWindow();
      }
      @Test

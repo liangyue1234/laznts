@@ -20,7 +20,6 @@ public class Login extends CaseBase{
    public static Logger logger= Logger.getLogger(Login.class);
     public DriverBase driver;
     public LoginPro loginPro;
-    public User_login user;
     public Login(){
       this.driver=  InitDriver("chrome");
       loginPro=new LoginPro(driver);
@@ -28,16 +27,15 @@ public class Login extends CaseBase{
     }
       @BeforeMethod
        public void  getLoginHome() throws InterruptedException {
-        driver.get("http://124.205.50.166:8082/caa_v3.0/jsp/index.html");
+        driver.get("http://192.168.10.111:8084/caa_v3.0/jsp/index.html");
         driver.sizeWindow();
         Thread.sleep(3000);
        }
        @Test
    public void testLogin() throws IOException {
-           SqlSession sqlSession= DataBaseUtil.getsqlSession();
-          User_login user= sqlSession.selectOne("login",3);
-        loginPro.login(user.getUsername(),user.getPassword());
-           Assert.assertEquals(user.getUsername(),user.getUsername());
+           loginPro.login();
+
+
         logger.info("登录日志");
    }
    @AfterMethod

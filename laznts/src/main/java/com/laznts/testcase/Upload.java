@@ -26,7 +26,7 @@ public class Upload extends CaseBase {
     }
     @BeforeMethod
     public void getUploadHome(){
-        driverBase.get("http://124.205.50.166:8082/caa_v3.0/jsp/index.html");
+        driverBase.get("http://192.168.10.111:8084/caa_v3.0/jsp/index.html");
         driverBase.sizeWindow();
         try {
             Thread.sleep(3000);
@@ -36,8 +36,9 @@ public class Upload extends CaseBase {
     }
     @Test
     public void upLoadCase(){
-        upLoadPro.upLoadFile("刘某甲与史某乙离婚纠纷一审民事判决书.docx");
+        upLoadPro.upLoadFile();
         logger.info("上传日志");
+        driverBase.close();
     }
 
 

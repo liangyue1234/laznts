@@ -12,8 +12,14 @@ public class UpLoadPro {
     public UpLoadPro(DriverBase driverBase){
         upLoadHandle=new UpLoadHandle(driverBase);
     }
-    public void upLoadFile(String wordUrl){
-        upLoadHandle.sendWord(wordUrl);
+    public void upLoadFile(){
+        upLoadHandle.clickUpload();
+        upLoadHandle.upFile();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         upLoadHandle.clickSearch();
     }
 

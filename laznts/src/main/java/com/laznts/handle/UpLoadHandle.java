@@ -14,11 +14,18 @@ public class UpLoadHandle {
         upLoadPage=new UpLoadPage(driverBase);
     }
     /**
-     * 上传文档
+     * 操作上传文档按钮
      */
-    public void sendWord(String wordUrl){
-        upLoadPage.sendKeys(upLoadPage.uploadInput(),wordUrl);
+    public void clickUpload(){
+       upLoadPage.click(upLoadPage.uploadButton());
     }
+    /**
+     * 上传文件
+     */
+    public void upFile(){
+        upLoadPage.findFile();
+    }
+
     /**
      * 点击检索
      */

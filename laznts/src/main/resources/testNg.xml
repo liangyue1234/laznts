@@ -5,11 +5,13 @@
 <class name="com.laznts.testcase.Login"/>
 <class name="com.laznts.testcase.Register"/>
 <class name="com.laznts.testcase.AllSearch"/>
+            <class name="com.laznts.testcase.Upload"/>
 </classes>
         </test>
 
 <listeners>
 <listener class-name="com.laznts.util.ExtentTestNGIReporterListener"/>
+    <!--<listener class-name="com.laznts.util.TestNGListener"/>-->
 </listeners>
 
         </suite>

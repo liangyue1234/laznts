@@ -1,15 +1,10 @@
 package com.laznts.page;
 
 import com.laznts.base.DriverBase;
-import com.laznts.entity.User_login;
-import com.laznts.util.DataBaseUtil;
 import com.laznts.util.getByLocator;
-import org.apache.ibatis.session.SqlSession;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 
-import java.io.IOException;
+import java.util.List;
 
 /**
  * Created by Administrator on 2018/8/23.
@@ -46,4 +41,11 @@ public class LoginPage extends BasePage {
     public WebElement getButton(){
         return  element(getByLocator.getLocator("button"));
     }
+    /**
+     * 获取登录后用户名
+     */
+//    public String getUserName(){
+//
+//
+//        return  driver.getDiv(getByLocator.getLocator(""))
 }

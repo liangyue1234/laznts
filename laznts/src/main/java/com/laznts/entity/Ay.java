@@ -9,4 +9,5 @@ import lombok.Data;
 public class Ay {
     private int id;
     private String ay;
+
 }

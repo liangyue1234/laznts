@@ -14,11 +14,17 @@ public class UpLoadPage extends BasePage {
     }
 
     /**
-     * 获取上传框元素
+     * 获取上传按钮元素
      */
-    public WebElement uploadInput(){
+    public WebElement uploadButton(){
 
-        return element(getByLocator.getLocator("searchinput"));
+        return element(getByLocator.getLocator("uploadbutton"));
+    }
+    /**
+     * 选择本地上传文件
+     */
+    public void findFile(){
+        driver.findWindows();
     }
     /**
      * 获取检索按钮元素

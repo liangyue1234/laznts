@@ -9,6 +9,7 @@ import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.List;
 
 /**
  * Created by Administrator on 2018/8/23.
@@ -24,7 +25,7 @@ public class DriverBase {
      * 关闭方法
      */
     public void stop(){
-        System.out.println("stop webdrivers");
+        System.out.println("stop webdriver");
         driver.close();
     }
     /**
@@ -72,8 +73,35 @@ public class DriverBase {
     /**
      * 获取文本信息
      */
-    public String  getText(By by){
+    public String  getText(By by,String element){
 
-        return driver.findElement(by).getText();
+        return driver.findElement(by).getAttribute(element);
+    }
+    /**
+     * 返回driver提供截图driver
+     */
+    public WebDriver getDriver(){
+        return driver;
+    }
+
+
+/**
+ * 操作windows框
+ */
+    public void findWindows(){
+        try {
+            Runtime.getRuntime().exec("D:\\lzznts\\laznts\\laznts\\laznts\\File\\upfile.exe");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+    /**
+     * 定位div元素
+     */
+    public String  getDiv(By by){
+        WebElement element=  driver.findElement(by);
+        String name=  element.findElement(by).getText();
+        return name;
     }
 }

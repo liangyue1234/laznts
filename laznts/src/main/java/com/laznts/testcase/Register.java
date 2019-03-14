@@ -18,13 +18,14 @@ public class Register  extends  CaseBase{
 
         public DriverBase driverBase;
         public RegisterPro registerPro;
+        public  User_register user_register;
         public Register(){
             this.driverBase= InitDriver("chrome");
             registerPro=new RegisterPro(driverBase);
         }
         @BeforeMethod
         public void  getLoginHome() throws InterruptedException {
-            driverBase.get("http://124.205.50.166:8082/caa_v3.0/jsp/index.html");
+            driverBase.get("http://192.168.10.111:8084/caa_v3.0/jsp/index.html");
             driverBase.sizeWindow();
             Thread.sleep(3000);
         }
